@@ -674,33 +674,33 @@ export namespace SchemaCompareCancellationRequest {
 
 // ------------------------------- <Schema Compare> -----------------------------
 
-// ------------------------------- <Assessment> -----------------------------
+// ------------------------------- <Sql Assessment> -----------------------------
 
-export interface AssessmentParams {
+export interface SqlAssessmentParams {
 	ownerUri: string;
 	targetType: number
 }
 
-export interface GenerateAssessmentScriptParams {
+export interface GenerateSqlAssessmentScriptParams {
 	items: azdata.AssessmentResultItem[];
 	taskExecutionMode: azdata.TaskExecutionMode;
 	targetServerName: string;
 	targetDatabaseName: string;
 }
 
-export namespace AssessmentInvokeRequest {
-	export const type = new RequestType<AssessmentParams, azdata.AssessmentResult, void, void>('assessment/invoke');
+export namespace SqlAssessmentInvokeRequest {
+	export const type = new RequestType<SqlAssessmentParams, azdata.AssessmentResult, void, void>('assessment/invoke');
 }
 
-export namespace GetAssessmentItemsRequest {
-	export const type = new RequestType<AssessmentParams, azdata.AssessmentResult, void, void>('assessment/getAssessmentItems');
+export namespace GetSqlAssessmentItemsRequest {
+	export const type = new RequestType<SqlAssessmentParams, azdata.AssessmentResult, void, void>('assessment/getAssessmentItems');
 }
 
-export namespace GenerateAssessmentScriptRequest {
-	export const type = new RequestType<GenerateAssessmentScriptParams, azdata.ResultStatus, void, void>('assessment/generateScript');
+export namespace GenerateSqlAssessmentScriptRequest {
+	export const type = new RequestType<GenerateSqlAssessmentScriptParams, azdata.ResultStatus, void, void>('assessment/generateScript');
 }
 
-// ------------------------------- <Assessment> -----------------------------
+// ------------------------------- <Sql Assessment> -----------------------------
 
 // ------------------------------- <Serialization> -----------------------------
 export namespace SerializeDataStartRequest {
