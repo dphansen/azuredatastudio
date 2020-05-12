@@ -1,4 +1,4 @@
-# Machine Learning Services for Azure Data Studio #
+# Machine Learning Services for Azure Data Studio # 
 Machine Learning Services for Azure Data Studio (Preview) provides support for new features that help you create, build, and deploy machine learning jobs in SQL Server through Azure Data Studio.
 
 ## Features ##
